@@ -1,0 +1,15 @@
+{
+  "name": "q_ws",
+  "version": "0.0.1",
+  "description": "",
+  "main": "ws.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prach",
+  "license": "",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "ws": "^5.2.2"
+  }
+}

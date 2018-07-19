@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Queue App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="q_container">
+            <h3>Queue A</h3>
+            <button id="q_a_btn">Add to queue A</button>
+            <ul id="q_A" class="q_list">
+
+            </ul>
+            <h3>Queue B</h3>
+            <button id="q_b_btn">Add to queue B</button>
+            <ul id="q_B" class="q_list">
+
+            </ul>
+        </div>
+        <div class="current_container">
+            <h2>Serving</h2>
+            <ul class="service_table_list">
+                <li class="service_table"><span class="service">A1:</span><span id="st_A1"></span></li>
+                <li class="service_table"><span class="service">A2:</span><span id="st_A2"></span></li>
+                <li class="service_table"><span class="service">A3:</span><span id="st_A3"></span></li>
+                <li class="service_table"><span class="service">B1:</span><span id="st_B1"></span></li>
+                <li class="service_table"><span class="service">B2:</span><span id="st_B2"></span></li>
+                <li class="service_table"><span class="service">B3:</span><span id="st_B3"></span></li>
+            </ul>
+        </div>
+
+        <div class="admin_area">
+            <select id="service_id">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+            </select>
+            
+            <button id="call_btn">Call next</button>
+        </div>
+        <script src="script.js" type="text/javascript" ></script>
+    </body>
+</html>
