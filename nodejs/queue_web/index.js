@@ -73,7 +73,9 @@ app.get('/dequeue', (req, res) => {
     const service = req.query.service;
     const type = service[0];
     makeGetReq(`http://localhost:8889/dequeue?type=${type}&service=${service}`, function(data) {
-        res.send(data);
+        makeGetReq(`http://localhost:8891/recommendation?id=${data.item.id.substring(1)}`, function(recResponse) {
+            res.send({service: data, recommendation: recResponse});
+        });
     });
 });
 
