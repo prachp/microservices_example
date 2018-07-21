@@ -1,0 +1,11 @@
+.serving_table {
+    width: 100%;
+    text-align: center;
+    font-size: 400%;
+    max-width: 800px;
+}
+
+.current_container {
+    margin: auto;
+    width: 800px;
+}

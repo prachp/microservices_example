@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Queue App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="admin_area">
+            <select id="service_id">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="B3">B3</option>
+            </select>
+            
+            <button id="call_btn">Call next</button>
+        </div>
+        <div class="customer">
+            <h2>Your next customer is <span id="cust_name"></span></h2>
+            <h3>Recommendation</h3>
+            <p id="recommendation"></p>
+        </div>
+        <script src="service.js" type="text/javascript" ></script>
+    </body>
+</html>
